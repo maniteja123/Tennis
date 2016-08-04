@@ -21,13 +21,7 @@ public class ScoreBoard {
 		players[0] = playerA;
 		players[1] = playerB;
 	}
-	
-	private boolean isDuece(int player) {
-		if(game[player] >= 3 && game[1-player]<=game[player])
-			return false;
-		return true;
-	}
-	
+
 	private int getCurrentPlayer(char player) {
 		if(player == players[0])
 			return 0;
@@ -79,6 +73,7 @@ public class ScoreBoard {
 		Integer testCases = Integer.parseInt(br.readLine());
 		for(int test=1; test <= testCases; test++) {
 			String score = br.readLine();
+			System.out.println("Test " + test);
 			char[] scores = score.toCharArray();
 			ScoreBoard scoreBoard = new ScoreBoard('A', 'B');
 			for (char s : scores) {
