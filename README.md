@@ -1,8 +1,9 @@
 # Tennis
 
+```
 Sample Input
 
-2               #number of test cases
+2              # number of test cases
 AAABBB
 ABABABAA
 
@@ -50,3 +51,4 @@ B    0 0
 
 A 0 1 0
 B 0 0 0
+```
